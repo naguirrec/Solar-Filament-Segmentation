@@ -1,0 +1,5 @@
+config,models,tta,threshold,close_size,min_area,object_filter,pooled_pq,diff_vs_first,diff_low,diff_high,fraction_better,holdout_files,annotator_views
+r34_tta,r34:1,yes,0.45,11,400,mean>=0.8,0.425473,0.000000,0.000000,0.000000,0.000,142,231
+r34_v2_agree_tta,r34_v2_agree:1,yes,0.45,11,400,mean>=0.8,0.406045,-0.019428,-0.033481,-0.003686,0.007,142,231
+r34+agree_50_50_tta,r34:0.5+r34_v2_agree:0.5,yes,0.45,11,400,mean>=0.8,0.421050,-0.004423,-0.016206,0.007615,0.245,142,231
+r34+agree_70_30_tta,r34:0.7+r34_v2_agree:0.3,yes,0.45,11,400,mean>=0.8,0.423171,-0.002302,-0.012462,0.007759,0.325,142,231

@@ -1,0 +1,24 @@
+---
+description: Local checks and a self-review before a pull request is ready
+alwaysApply: true
+---
+
+# Pull requests
+
+Code, names, comments, commits, and technical docs are in English.
+
+Before opening a pull request, or marking it ready for review:
+
+1. Run `./scripts/check.sh` and make it pass. That script is the only local check (`uv run --locked ruff check`, `uv run --locked ruff format --check`, and `uv run --locked pytest`). Do not commit competition data, and do not add it to CI.
+2. Review your own diff with a fresh-context subagent, then fix the findings.
+3. Fill `.github/pull_request_template.md`. In **How it was verified**, mark each item as verified or assumed.
+
+Repeat that review/fix cycle at most 3 times. If checks still fail or findings remain, stop and escalate to Nacho. Do not start a fourth cycle.
+
+Keep pull requests small.
+
+Merge a pull request once `./scripts/check.sh` passes on CI and a different agent, not the PR's author thread, has approved the change. Do not wait for Nacho. Nacho confirmed this on 2026-11-01. That decision is an agent's, after both conditions. Do not add a bot that merges on green CI alone.
+
+Without Nacho's explicit OK, do not publish anything (making the repo public, X, LinkedIn), delete data, handle credentials, or commit MAGFiLO data, model weights, or submission CSVs.
+
+Agents may use the Kaggle CLI with the stored token, without reading or printing it, to create and run notebooks that are always private on the GPU quota, update the private `solar-code` dataset and download outputs. They may submit to the competition without asking when the expected gain is more than +0.01 in validation against the best submission so far, measured as `docs/ROADMAP_V2.md` section 6 says and not from the peak of a sweep. At +0.01 or less a submission needs Nacho's OK. Each submission names its config and commit in its message and is recorded in `docs/RESULTS.md`. Nacho confirmed this on 2026-11-06.

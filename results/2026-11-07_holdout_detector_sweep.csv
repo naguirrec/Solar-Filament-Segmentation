@@ -1,0 +1,29 @@
+axis,setting,pooled_pq,diff_vs_base,diff_low,diff_high,fraction_better,note
+base,"base (U-Net, flip TTA, mean>=0.8)",0.425474,0.000000,0.000000,0.000000,0.000,
+score_raw,raw>=0.05,0.356548,-0.068926,-0.093234,-0.044966,0.000,
+score_raw,raw>=0.1,0.355164,-0.070310,-0.095590,-0.046198,0.000,
+score_raw,raw>=0.2,0.356145,-0.069328,-0.094156,-0.044715,0.000,
+score_raw,raw>=0.3,0.360343,-0.065131,-0.090028,-0.041126,0.000,
+score_raw,raw>=0.5,0.317078,-0.108395,-0.139120,-0.078010,0.000,
+score_raw,raw>=0.7,0.220458,-0.205015,-0.240016,-0.167873,0.000,
+score_calibrated,cal>=0.1,0.353018,-0.072455,-0.097740,-0.048272,0.000,
+score_calibrated,cal>=0.2,0.358151,-0.067322,-0.092677,-0.043006,0.000,
+score_calibrated,cal>=0.3,0.358354,-0.067120,-0.093696,-0.042011,0.000,
+score_calibrated,cal>=0.4,0.315877,-0.109596,-0.140173,-0.078972,0.000,
+score_calibrated,cal>=0.5,0.175189,-0.250284,-0.284826,-0.213557,0.000,
+dilation,dilation=0,0.333692,-0.091782,-0.117856,-0.065647,0.000,
+dilation,dilation=3,0.356081,-0.069393,-0.093822,-0.045535,0.000,
+dilation,default,0.355494,-0.069980,-0.094689,-0.046333,0.000,
+dilation,dilation=9,0.355376,-0.070098,-0.095203,-0.045434,0.000,
+dilation,dilation=15,0.355475,-0.069999,-0.095088,-0.045581,0.000,
+emit_unclaimed,default,0.355494,-0.069980,-0.094689,-0.046333,0.000,
+emit_unclaimed,emit_unclaimed,0.350725,-0.074749,-0.099008,-0.050759,0.000,
+sanity,"detector only, every detection (no U-Net)",0.150083,-0.275391,-0.299508,-0.251354,0.000,
+sanity,"detector only, raw>=0.5 (library default, untuned)",0.238330,-0.187144,-0.217802,-0.154936,0.000,
+all,crossfit_seed_0,0.425474,0.000000,0.000000,0.000000,0.000,does not pass; chose base and base
+all,crossfit_seed_1,0.425474,0.000000,0.000000,0.000000,0.000,does not pass; chose base and base
+all,crossfit_seed_2,0.425474,0.000000,0.000000,0.000000,0.000,does not pass; chose base and base
+all,crossfit_seed_3,0.425474,0.000000,0.000000,0.000000,0.000,does not pass; chose base and base
+all,crossfit_seed_4,0.425474,0.000000,0.000000,0.000000,0.000,does not pass; chose base and base
+all,crossfit_verdict,0.425474,0.000000,,,,"DO NOT ADOPT: 0 of 5 partitions pass, 4 needed"
+dedup,dropped,,,,,,"18974 of 21601 merged detections dropped, 1587 across windows"

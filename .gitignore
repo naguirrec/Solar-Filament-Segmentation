@@ -1,0 +1,17 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+
+.env
+kaggle.json
+# Weights are not committed without the owner's OK (AGENTS.md). Only the manifest
+# can be tracked; *.pt and *.pth stay ignored everywhere until that OK.
+weights/*
+!weights/MANIFEST.json
+*.pt
+*.pth
+submission*.csv
+# Output of a local run of notebooks/reproduce.ipynb (overlays of dataset frames).
+outputs/

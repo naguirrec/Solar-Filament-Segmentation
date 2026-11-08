@@ -1,0 +1,9 @@
+predictor,min_area,close_size,pooled_pq,holdout_files,annotator_views
+unet_r50_crops,80,0,0.333719,142,231
+unet_r50_crops,140,0,0.346701,142,231
+unet_r50_crops,240,0,0.362968,142,231
+unet_r50_crops,400,0,0.374370,142,231
+unet_r50_crops,700,0,0.354026,142,231
+unet_r50_crops,1200,0,0.304797,142,231
+unet_r50_crops,2000,0,0.200641,142,231
+unet_r50_crops,3000,0,0.117005,142,231

@@ -1,0 +1,15 @@
+quantity,value,low,high,files,note
+current_setting,0.408679,0.384105,0.432910,142,"threshold 0.45, close_size 11, min_area 400"
+h2_stratum_one_view,0.406886,0.370525,0.442826,82,
+h2_stratum_several_views,0.409717,0.376422,0.440228,60,
+h2_stratum_views_2,0.386871,0.329362,0.433422,31,
+h2_stratum_views_3,0.424252,0.379780,0.465290,29,
+h2_reweighted_views,0.417153,0.380429,0.451064,142,file mix tilted from 1.63 to 2.44 views per file; effective files 67
+h1_sweep_maximum,0.411712,,,142,"threshold 0.3, close_size 0, min_area 500; 294 settings"
+h1_crossfit_seed_0,0.405751,,,142,"threshold 0.3, close_size 0, min_area 500; threshold 0.4, close_size 7, min_area 400"
+h1_crossfit_seed_1,0.396246,,,142,"threshold 0.4, close_size 7, min_area 400; threshold 0.35, close_size 15, min_area 500"
+h1_crossfit_seed_2,0.386650,,,142,"threshold 0.55, close_size 21, min_area 400; threshold 0.3, close_size 0, min_area 500"
+h1_crossfit_seed_3,0.396510,,,142,"threshold 0.45, close_size 15, min_area 400; threshold 0.35, close_size 0, min_area 400"
+h1_crossfit_seed_4,0.404433,,,142,"threshold 0.3, close_size 0, min_area 320; threshold 0.3, close_size 0, min_area 500"
+h1_crossfit_mean,0.397918,0.386650,0.405751,142,"low and high are the lowest and highest partition, not an interval"
+h1_sweep_maximum_minus_crossfit,0.013794,,,142,estimate of what selection adds; each fold chooses on half the files

@@ -1,0 +1,16 @@
+metric,value,source
+holdout_files,142,reproduce-final-r34
+holdout_views,231,reproduce-final-r34
+holdout_pooled_pq,0.4255,reproduce-final-r34
+test_images,180,reproduce-final-r34
+test_rows,1258,reproduce-final-r34
+test_inference_s_per_image,1.0789,timing.json
+test_total_s_per_image,1.4002,timing.json
+holdout_inference_s_per_image,1.1208,timing.json
+holdout_total_s_per_image_with_scoring,1.5066,timing.json
+fp32_submission_rows,1256,submission 57954296
+frames_with_masks_both,176,comparison with submission 57954296
+frames_identical,22,comparison with submission 57954296
+foreground_iou,0.99948,comparison with submission 57954296
+pixels_differing,1526,comparison with submission 57954296
+pixels_in_union,2958716,comparison with submission 57954296

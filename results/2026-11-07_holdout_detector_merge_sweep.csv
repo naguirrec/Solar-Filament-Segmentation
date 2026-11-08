@@ -1,0 +1,18 @@
+axis,setting,pooled_pq,diff_vs_base,diff_low,diff_high,fraction_better,note
+base,"base (U-Net, flip TTA, mean>=0.8)",0.425474,0.000000,0.000000,0.000000,0.000,pq=0.4255 tp=412 fp=193 fn=267 sq=0.6630 rq=0.6417
+merge_cut,merge cut=0.2 coverage=0.5 dedup=0,0.326884,-0.098589,-0.134285,-0.063604,0.000,pq=0.3269 tp=287 fp=189 fn=392 sq=0.6578 rq=0.4970 merges=72 frames_changed=43
+merge_cut,merge cut=0.3 coverage=0.5 dedup=0,0.335630,-0.089843,-0.122895,-0.058959,0.000,pq=0.3356 tp=297 fp=188 fn=382 sq=0.6577 rq=0.5103 merges=68 frames_changed=40
+merge_cut,merge cut=0.5 coverage=0.5 dedup=0,0.353688,-0.071786,-0.098684,-0.047639,0.000,pq=0.3537 tp=319 fp=187 fn=360 sq=0.6569 rq=0.5384 merges=57 frames_changed=35
+merge_cut,merge cut=0.7 coverage=0.5 dedup=0,0.381857,-0.043617,-0.063430,-0.025794,0.000,pq=0.3819 tp=355 fp=191 fn=324 sq=0.6588 rq=0.5796 merges=34 frames_changed=22
+merge_cut,merge cut=0.9 coverage=0.5 dedup=0,0.417104,-0.008370,-0.018032,0.000000,0.000,pq=0.4171 tp=401 fp=190 fn=278 sq=0.6605 rq=0.6315 merges=6 frames_changed=3
+merge_coverage,merge cut=0.5 coverage=0.5 dedup=0,0.353688,-0.071786,-0.098684,-0.047639,0.000,pq=0.3537 tp=319 fp=187 fn=360 sq=0.6569 rq=0.5384 merges=57 frames_changed=35
+merge_coverage,merge cut=0.5 coverage=0.8 dedup=0,0.356978,-0.068496,-0.093212,-0.045033,0.000,pq=0.3570 tp=323 fp=187 fn=356 sq=0.6570 rq=0.5433 merges=55 frames_changed=34
+merge_dedup,merge cut=0.5 coverage=0.5 dedup=0,0.353688,-0.071786,-0.098684,-0.047639,0.000,pq=0.3537 tp=319 fp=187 fn=360 sq=0.6569 rq=0.5384 merges=57 frames_changed=35
+merge_dedup,merge cut=0.5 coverage=0.5 dedup=1,0.371056,-0.054418,-0.075400,-0.034245,0.000,pq=0.3711 tp=341 fp=187 fn=338 sq=0.6567 rq=0.5650 merges=44 frames_changed=28
+claim_fusion,"claim fusion, DEFAULT_CONFIG (phase F)",0.355494,-0.069980,-0.094689,-0.046333,0.000,pq=0.3555 tp=326 fp=199 fn=353 sq=0.6565 rq=0.5415
+all,crossfit_seed_0,0.425474,0.000000,0.000000,0.000000,0.000,does not pass; chose base and base
+all,crossfit_seed_1,0.425474,0.000000,0.000000,0.000000,0.000,does not pass; chose base and base
+all,crossfit_seed_2,0.425474,0.000000,0.000000,0.000000,0.000,does not pass; chose base and base
+all,crossfit_seed_3,0.425474,0.000000,0.000000,0.000000,0.000,does not pass; chose base and base
+all,crossfit_seed_4,0.425474,0.000000,0.000000,0.000000,0.000,does not pass; chose base and base
+all,crossfit_verdict,0.425474,0.000000,,,,"DO NOT ADOPT: 0 of 5 partitions pass, 4 needed"

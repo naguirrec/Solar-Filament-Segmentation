@@ -1,0 +1,9 @@
+predictor,min_area,close_size,pooled_pq,holdout_files,annotator_views
+unet_r34_v2_agree,80,0,0.367194,142,231
+unet_r34_v2_agree,140,0,0.374724,142,231
+unet_r34_v2_agree,240,0,0.385849,142,231
+unet_r34_v2_agree,400,0,0.387491,142,231
+unet_r34_v2_agree,700,0,0.366419,142,231
+unet_r34_v2_agree,1200,0,0.301093,142,231
+unet_r34_v2_agree,2000,0,0.210320,142,231
+unet_r34_v2_agree,3000,0,0.122458,142,231

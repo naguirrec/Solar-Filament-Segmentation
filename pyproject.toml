@@ -1,0 +1,30 @@
+[project]
+name = "solar-filament-segmentation"
+version = "0.1.0"
+description = "Solar Filament Segmentation Challenge 2026"
+requires-python = ">=3.12"
+dependencies = [
+    "matplotlib>=3.11.2",
+    "numpy>=2.5.4",
+    "opencv-python-headless>=5.0.0.93",
+    "pycocotools>=2.0.11",
+    "scikit-image>=0.26.0",
+    "scikit-learn>=1.9.1",
+]
+
+[project.optional-dependencies]
+# Inference and training on a GPU. The versions are the ones the Kaggle T4 runs
+# used. CI does not install this extra (it is large); `requirements.txt` is
+# exported with it so that a fresh environment can run notebooks/reproduce.ipynb.
+gpu = [
+    "torch==2.11.0",
+    "torchvision",
+    "segmentation-models-pytorch==0.6.0",
+    "ipykernel==7.4.0",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+    "ruff>=0.17.2",
+]

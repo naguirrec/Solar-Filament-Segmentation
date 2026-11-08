@@ -1,0 +1,3 @@
+# Ignore run outputs. This file stays tracked.
+*
+!.gitignore

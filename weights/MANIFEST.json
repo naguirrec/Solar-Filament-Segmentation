@@ -1,0 +1,14 @@
+{
+  "format": 1,
+  "weights": {
+    "unet_r34_crops_fp16.pt": {
+      "bytes": 49000695,
+      "dtype": "float16",
+      "encoder": "resnet34",
+      "epochs": 80,
+      "file_sha256": "4b0b873b998c1eb1a9e37f429c7bea95449ee0f95ace8222128e63501806f9be",
+      "tensor_sha256": "d0fb006a82fa68e777a820dc105c54568b7499ee5acb3ceb2a025d3f377f01ec",
+      "tensor_sha256_original": "3ac77e982e589dabcd56cbfaf1fa54c4adddb52bbeab28757639ef164c67ba5a"
+    }
+  }
+}

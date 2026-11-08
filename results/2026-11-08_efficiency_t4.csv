@@ -1,0 +1,4 @@
+variant,tta,holdout_pooled_pq,test_images,test_inference_s_per_image,test_total_s_per_image,holdout_total_s_per_image_with_scoring,kernel,note
+standard,flips (4 views),0.4255,180,1.0789,1.4002,1.5066,reproduce-final-r34,final pipeline; code and weights from solar-code (main @ 966b1ab)
+standard,flips (4 views),0.4255,180,1.079,1.382,1.4527,reproduce-jury-route,final pipeline; GitHub zip of main @ 0286670 uploaded as the dataset
+lite,none,0.3978,180,0.2816,0.599,0.6885,reproduce-lite-r34,same weights and post-processing without TTA (solar-code main @ 966b1ab); post-processing was chosen with TTA
