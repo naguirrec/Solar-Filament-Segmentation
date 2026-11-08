@@ -4,11 +4,11 @@ Our solution to the [Solar Filament Segmentation Challenge 2026](https://www.kag
 
 ## Result
 
-| | Holdout PQ | Public leaderboard | Seconds per image (T4) |
-| --- | --- | --- | --- |
-| Final pipeline | 0.4255 (0.4210 cross-fitted) | 0.35 | 1.40 |
+| | Holdout PQ, cross-fitted | Holdout PQ, in sample | Public leaderboard | Seconds per image (T4, whole pipeline, one run) |
+| --- | --- | --- | --- | --- |
+| Final pipeline | 0.4210 | 0.4255 | 0.35 | 1.40 |
 
-The holdout is the most recent 20% of observation dates in the training data (142 files, 231 annotator views). [`docs/RESULTS.md`](docs/RESULTS.md) has every experiment, including the ones that did not help.
+The holdout is the most recent 20% of observation dates in the training data (142 files, 231 annotator views). The post-processing settings were chosen on this holdout, so the in-sample number is optimistic; the cross-fitted one chooses them on four date partitions and scores the fifth. [`docs/RESULTS.md`](docs/RESULTS.md) has every experiment, including the ones that did not help.
 
 ## Pipeline
 
@@ -16,7 +16,7 @@ The holdout is the most recent 20% of observation dates in the training data (14
 2. Tiled inference over the full frame (tiles of 512, overlap 128) with flip test-time augmentation (4 views).
 3. Threshold 0.45, solar-disk gate, an elliptical closing of size 11 that only decides which pixels form one instance, connected components.
 4. Drop components under 400 pixels and components with mean probability below 0.8.
-5. One RLE per component (`pycocotools`), validated before the CSV is written.
+5. One RLE per component (`pycocotools`); the written CSV is then validated with `filament.validate`.
 
 ## Reproduce the predictions without retraining
 
